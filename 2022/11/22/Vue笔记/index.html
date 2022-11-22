@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Rupoly">
+    
+    <title>
+        
+            Vue笔记 |
+        
+        Rupoly&#39;s blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.jpeg">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/fontawesome/css/regular.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/fontawesome/css/solid.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/fontawesome/css/brands.min.css">
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":false,"init_open":true},"style":{"primary_color":"#cf666e","logo":"/images/logo.jpeg","favicon":"/images/logo.jpeg","avatar":"/images/avatar.svg","font_size":null,"font_family":null,"hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"header_transparent":true,"background_img":"/images/bg.svg","description":"我不看月亮，也不说想你 || 这样月亮和你都蒙在鼓里","font_color":null,"hitokoto":false},"scroll":{"progress_bar":false,"percent":true}},"local_search":{"enable":true,"preload":false},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":true},"lazyload":{"enable":false},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":false,"version":2}},"post":{"author_label":{"enable":true,"auto":true,"custom_label_list":["Trainee","Engineer","Architect"]},"word_count":{"enable":false,"wordcount":false,"min2read":false},"img_align":"left","copyright_info":false},"version":"3.5.2"};
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"};
+  </script>
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="/images/logo.jpeg">
+                </a>
+            
+            <a class="logo-title" href="/">
+               Rupoly&#39;s blog
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">Vue笔记</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/avatar.svg">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">Rupoly</span>
+                            
+                                <span class="author-label">Lv1</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2022-11-22 18:36:54</span>
+        <span class="mobile">2022-11-22 18:36</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2022-11-22 19:21:57</span>
+    </span>
+    
+    
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                <h1 id="接近Vue"><a href="#接近Vue" class="headerlink" title="接近Vue"></a>接近Vue</h1><h2 id="入口文件的特点"><a href="#入口文件的特点" class="headerlink" title="入口文件的特点"></a>入口文件的特点</h2><p>​    要想要某个页面或文件在项目中生效，一定会直接或间接的与入口文件产生联系</p>
+<ol>
+<li>引入vue依赖 =&gt; 如果引入的是第三方依赖，那么路径不必写成相对或绝对路径<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Vue</span> <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br></pre></td></tr></table></figure></li>
+<li>引入根组件<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">App</span> <span class="keyword">from</span> <span class="string">&#x27;./APP.vue&#x27;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>vue项目的一个控制台打印提示，默认关闭<br>Vue.config.productionTip = false</p>
+</blockquote>
+</li>
+<li>实例化vue对象，并且挂载到唯一html页面上<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="title class_">Vue</span>(&#123;</span><br><span class="line">  <span class="attr">render</span>: <span class="function"><span class="params">h</span> =&gt;</span> <span class="title function_">h</span>(<span class="title class_">App</span>), <span class="comment">// 渲染函数，告诉vue要渲染的组件</span></span><br><span class="line">&#125;).$mount(<span class="string">&#x27;#app&#x27;</span>) <span class="comment">// 确定vue实例挂载的盒子</span></span><br></pre></td></tr></table></figure>
+<br></li>
+</ol>
+<h2 id="自定义vue中开发服务器配置及关闭eslint检查"><a href="#自定义vue中开发服务器配置及关闭eslint检查" class="headerlink" title="自定义vue中开发服务器配置及关闭eslint检查"></a>自定义vue中开发服务器配置及关闭eslint检查</h2><h3 id="自定义服务器配置在vue-config-js文件中，moudule-exports添加"><a href="#自定义服务器配置在vue-config-js文件中，moudule-exports添加" class="headerlink" title="自定义服务器配置在vue.config.js文件中，moudule.exports添加"></a><strong>自定义服务器配置在vue.config.js文件中，moudule.exports添加</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">devServer</span>:&#123;  <span class="comment">// 自定义开发服务器配置</span></span><br><span class="line">    <span class="attr">prot</span>: <span class="number">3000</span> <span class="comment">// 自定义端口号</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="全局关闭eslint检查"><a href="#全局关闭eslint检查" class="headerlink" title="全局关闭eslint检查"></a><strong>全局关闭eslint检查</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">lintOnSave</span>:<span class="literal">false</span> <span class="comment">// </span></span><br></pre></td></tr></table></figure>
+<h3 id="局部关闭eslint检查"><a href="#局部关闭eslint检查" class="headerlink" title="局部关闭eslint检查"></a><strong>局部关闭eslint检查</strong></h3><p>​    直接添加//注释即可</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 只能忽略下一行代码的eslint检测：</span></span><br><span class="line"><span class="comment">// eslint-disable-next-line</span></span><br><span class="line"><span class="keyword">let</span> a = <span class="number">10</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 只能忽略当前行代码的eslint检测：</span></span><br><span class="line"><span class="keyword">let</span> b = <span class="number">20</span><span class="comment">// eslint-disable-line</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 忽略后续代码的eslint检测：/* eslint-disable */</span></span><br><span class="line"><span class="comment">/* eslint-disable */</span></span><br><span class="line"><span class="keyword">let</span> c = <span class="number">30</span> </span><br><span class="line"><span class="keyword">let</span> d = <span class="number">40</span></span><br><span class="line"><span class="keyword">let</span> e = <span class="number">50</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 开启后续代码的eslint检测：/* eslint-enable */</span></span><br><span class="line"><span class="comment">/* eslint-enable */</span></span><br><span class="line"><span class="keyword">let</span> f = <span class="number">60</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<h2 id="关于-vue文件中的三个标签"><a href="#关于-vue文件中的三个标签" class="headerlink" title="关于.vue文件中的三个标签"></a>关于.vue文件中的三个标签</h2></blockquote>
+<ol>
+<li><strong>template标签</strong><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">标签模板 =&gt; 对应记忆对照html文件中的&lt;html&gt;标签结构</span><br><span class="line">vue模板标签中，只能有一个根标签!</span><br></pre></td></tr></table></figure></li>
+<li><strong>script标签</strong><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// js相关的代码</span></span><br><span class="line"><span class="comment">// 在js中 有一个 export default &#123;&#125; 结构， 在这个结构中需要遵循vue的代码规则</span></span><br></pre></td></tr></table></figure></li>
+<li><strong>style标签</strong><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/* 当前组件样式表 - 期望每个组件中的style 标签只能影响当前组件中的标签内容 */</span><br><span class="line">/* 只需要在style 标签中添加一个属性 - scoped 就可以让样式只作用于当前组件的标签 */</span><br><span class="line">/* 原理: scoped 属性，会为每一个样式表自动添加当前组件中所被设置的自定义属性（data-v-hash随机数），形参一个复合选择器，而能够被选中的标签均存在于当前组件中，所以可以被区分开 */</span><br><span class="line">/* 规律/要求: 只要组件需要设置style样式，就在style标签中添加 scoped 属性 */</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="MVVM模型的理解"><a href="#MVVM模型的理解" class="headerlink" title="MVVM模型的理解"></a>MVVM模型的理解</h2><p>​    设计模式: 是一套被反复使用的、多数人知晓的、经过分类编目的、代码设计经验的总结。</p>
+<ul>
+<li>MVVM，一种软件架构模式，决定了写代码的思想和层次<ul>
+<li>M：   model数据模型          (data里定义)    </li>
+<li>V：    view视图                   （html页面）</li>
+<li>VM： ViewModel视图模型  (vue.js源码)</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>MVVM通过<code>数据双向绑定</code>让数据自动地双向同步  <strong>不再需要操作DOM</strong><ul>
+<li>V（修改视图） -&gt; M（数据自动同步）</li>
+<li>M（修改数据） -&gt; V（视图自动同步）</li>
+</ul>
+</li>
+</ul>
+<p><img src="/../my_images/Vue_images/image-20220601175727435.png"></p>
+<p><strong>总结：</strong></p>
+<p>​        vue使用的mvvm设计模式。<strong>MVVM</strong>是<code>Model-View-ViewModel</code>缩写，也就是把<code>MVC</code>中的<code>Controller</code>演变成<code>ViewModel</code>。<code>Model</code>层代表数据模型，<code>View</code>代表UI组件，<code>ViewModel</code>是<code>View</code>和<code>Model</code>层的桥梁，数据会绑定到<code>viewModel</code>层并自动将数据渲染到页面中，视图变化的时候会通知<code>viewModel</code>层更新数据。</p>
+<p>在MVVM模型之前使用的MVC模型：</p>
+<p><img src="/../my_images/Vue_images/image-20220602095825740.png"></p>
+<p>​        MVC允许在不改变视图的情况下改变视图对用户输入的响应方式，用户对View的操作交给了Controller处理，在Controller中响应View的事件调用Model的接口对数据进行操作，一旦Model发生变化便通知相关视图进行更新。</p>
+<p><strong>原生的HTML + JS就是使用的这个模型</strong></p>
+<blockquote>
+<p>将html看成view;js看成controller，负责处理用户与应用的交互，响应对view的操作（对事件的监听），调用Model对数据进行操作，完成model与view的同步（根据model的改变，通过选择器对view进行操作）;将js的ajax当做Model，也就是数据层，通过ajax从服务器获取数据。</p>
+</blockquote>
+<hr>
+<br>
+<br>
+<br>
+
+<h1 id="关于Vue中的属性"><a href="#关于Vue中的属性" class="headerlink" title="关于Vue中的属性"></a>关于Vue中的属性</h1><h2 id="V-bind动态属性详解"><a href="#V-bind动态属性详解" class="headerlink" title="V-bind动态属性详解"></a>V-bind动态属性详解</h2><p>语法： <code>v-bind:</code>属性名=”vue中定义的变量/表达式”</p>
+<p>简化的语法： 将<code>v-bind:</code>属性名 转化为 =&gt; <code>:</code>属性名</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">v-bind:href</span>=<span class="string">&quot;baiduUrl&quot;</span>&gt;</span>&#123;&#123; url &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">    <span class="attr">name</span>:<span class="string">&#x27;DemoIndex2&#x27;</span>,</span><br><span class="line">    <span class="title function_">data</span>(<span class="params"></span>)&#123;</span><br><span class="line">        <span class="keyword">return</span>&#123;</span><br><span class="line">            <span class="attr">baiduUrl</span>:<span class="string">&#x27;http://www.baidu.com&#x27;</span>,</span><br><span class="line">            <span class="attr">url</span>:<span class="string">&#x27;www.baidu.com&#x27;</span>,</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意点：</strong></p>
+<p>关于v-bind动态属性作用于图片时尤其需要注意：v-bind 会直接把资源路径认定为字符串</p>
+<p>解决方式：直接在v-bind动态属性后面传递实际的资源</p>
+<p><strong>方法1</strong>：通过import引入资源文件，在data中进行定义，最后在动态属性中使用</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">v-bind:src</span>=<span class="string">&quot;img1&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 引入import</span></span><br><span class="line"><span class="keyword">import</span> img <span class="keyword">from</span> <span class="string">&#x27;../assets/logo.png&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">    <span class="attr">name</span>:<span class="string">&#x27;DemoIndex2&#x27;</span>,</span><br><span class="line">    <span class="title function_">data</span>(<span class="params"></span>)&#123;</span><br><span class="line">        <span class="keyword">return</span>&#123;</span><br><span class="line">            <span class="comment">// 在data中设置路径，引入</span></span><br><span class="line">            <span class="attr">img1</span>:img,</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>方法2</strong>：通过require 引入资源文件，直接在动态属性中使用</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">v-bind:src</span>=<span class="string">&quot;img2&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">    <span class="attr">name</span>:<span class="string">&#x27;DemoIndex2&#x27;</span>,</span><br><span class="line">    <span class="title function_">data</span>(<span class="params"></span>)&#123;</span><br><span class="line">        <span class="keyword">return</span>&#123;</span><br><span class="line">            <span class="comment">// 通过require 引入资源文件，直接在动态属性中使用</span></span><br><span class="line">            <span class="attr">img2</span>:<span class="built_in">require</span>(<span class="string">&#x27;../assets/logo.png&#x27;</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>开发中一般会使用方法2，优势： require引入资源的方式是按需的，这样一来，页面初始更新效率会更高</strong></p>
+
+            </div>
+
+            
+
+            
+
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%A5%E8%BF%91Vue"><span class="nav-number">1.</span> <span class="nav-text">接近Vue</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%A5%E5%8F%A3%E6%96%87%E4%BB%B6%E7%9A%84%E7%89%B9%E7%82%B9"><span class="nav-number">1.1.</span> <span class="nav-text">入口文件的特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89vue%E4%B8%AD%E5%BC%80%E5%8F%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%85%B3%E9%97%ADeslint%E6%A3%80%E6%9F%A5"><span class="nav-number">1.2.</span> <span class="nav-text">自定义vue中开发服务器配置及关闭eslint检查</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E5%9C%A8vue-config-js%E6%96%87%E4%BB%B6%E4%B8%AD%EF%BC%8Cmoudule-exports%E6%B7%BB%E5%8A%A0"><span class="nav-number">1.2.1.</span> <span class="nav-text">自定义服务器配置在vue.config.js文件中，moudule.exports添加</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%A8%E5%B1%80%E5%85%B3%E9%97%ADeslint%E6%A3%80%E6%9F%A5"><span class="nav-number">1.2.2.</span> <span class="nav-text">全局关闭eslint检查</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B1%80%E9%83%A8%E5%85%B3%E9%97%ADeslint%E6%A3%80%E6%9F%A5"><span class="nav-number">1.2.3.</span> <span class="nav-text">局部关闭eslint检查</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E-vue%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E4%B8%89%E4%B8%AA%E6%A0%87%E7%AD%BE"><span class="nav-number">1.3.</span> <span class="nav-text">关于.vue文件中的三个标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MVVM%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3"><span class="nav-number">1.4.</span> <span class="nav-text">MVVM模型的理解</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B3%E4%BA%8EVue%E4%B8%AD%E7%9A%84%E5%B1%9E%E6%80%A7"><span class="nav-number">2.</span> <span class="nav-text">关于Vue中的属性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#V-bind%E5%8A%A8%E6%80%81%E5%B1%9E%E6%80%A7%E8%AF%A6%E8%A7%A3"><span class="nav-number">2.1.</span> <span class="nav-text">V-bind动态属性详解</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2022</span> -
+            
+            2022
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">Rupoly</a>
+            
+        </div>
+        
+            <script async data-pjax
+                    src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    访问人数&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                
+                
+                    总访问量&nbsp;<span id="busuanzi_value_site_pv"></span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="">rupoly</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="">1.0.0</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/dark-light-toggle.js"></script>
+
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/local-search.js"></script>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/code-block.js"></script>
+
+
+
+
+<div class="post-scripts pjax">
+    
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/post-helper.js"></script>
+        
+            <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/libs/anime.min.js"></script>
+        
+        
+            <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/toc.js"></script>
+        
+    
+</div>
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            KEEP.refresh();
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
